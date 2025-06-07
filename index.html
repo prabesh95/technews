@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- --platinum: #e0e1ddff;        Lightest - Background/text contrast 
+  --silver-lake-blue: #778da9ff; Light shade - Subtle accents 
+  --rich-black: #0d1b2aff;      Darkest shade - Primary (dominant)
+  --oxford-blue: #1b263bff;     Slightly lighter - Secondary 
+  --yinmn-blue: #415a77ff;      Mid-tone - Accent/tertiary  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @theme {
+        --color-platinum: #e0e1ddff;
+        --color-silverLakeBlue: #778da9ff;
+        --color-richBlack: #0d1b2aff;
+        --color-oxfordBlue: #1b263bff;
+        --color-yinmnBlue: #415a77ff;
+      }
+h1 {
+  font-size: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+  line-height: 1.25;
+  margin-bottom: 0.9rem;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2.5vw + 0.4rem, 2rem);
+  line-height: 1.35;
+  margin-bottom: 0.7rem;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2vw + 0.3rem, 1.75rem);
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+}
+
+h5 {
+  font-size: clamp(1rem, 1.5vw + 0.2rem, 1.5rem);
+  line-height: 1.45;
+  
+}
+
+/* Paragraphs */
+p {
+  font-size: clamp(1rem, 1.2vw + 0.25rem, 1.25rem);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  max-width: 65ch;
+}
+
+      body {
+        
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  /* Or apply to specific elements */
+}
+.nav-text{
+  font-size: clamp(1rem, 1.2vw + 0.25rem, 1.25rem);
+  line-height: 1.7;
+  
+  max-width: 65ch;
+}
+    </style>
+</head>
+
+<body class="">
+  <!-- Navigation -->
+  <nav class="body-text">
+    <div class="bg-oxfordBlue shadow-md fixed left-0 right-0 z-50 flex items-center justify-between h-20">
+      <div class="container mx-auto w-full px-6 flex items-center justify-between h-full">
+        <!-- Logo -->
+        <div class="cursor-pointer">
+          <a href="/">
+            <img src="/uploads/logo.png" alt="logo" class="h-9 md:h-12 w-auto">
+          </a>
+        </div>
+
+        <!-- Horizontal Menu (centered) -->
+        <div class="hidden xl:flex items-center justify-center flex-1 space-x-8 mx-8 nav-text">
+          <a href="/" class="text-platinum hover:text-silverLakeBlue transition duration-200 font-medium ">Home</a>
+
+          <!-- Technology Dropdown -->
+          <div class="relative group">
+            <a href="/technology.html">
+              <button class="text-platinum hover:text-silverLakeBlue transition flex items-center font-medium">
+
+                Technology
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+
+              </button>
+            </a>
+            <div
+              class="absolute left-0 mt-2 w-60 bg-richBlack rounded-md shadow-lg py-2 z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Internet & Cloud</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Artificial
+                Intelligence</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Cloud Computing</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Blockchain</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Gadgets & Devices</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Innovation</a>
+            </div>
+          </div>
+
+          <!-- Development Dropdown -->
+          <div class="relative group">
+            <a href="/development.html">
+              <button class="text-platinum hover:text-silverLakeBlue transition flex items-center font-medium">
+                Development
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </a>
+            <div
+              class="absolute left-0 mt-2 w-56 bg-richBlack rounded-md shadow-lg py-2 z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Programming
+                Concepts</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Web Design</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Software
+                Development</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">DevOps</a>
+            </div>
+          </div>
+
+          <!-- Trends Dropdown -->
+          <div class="relative group">
+            <a href="/trends.html">
+              <button class="text-platinum hover:text-silverLakeBlue transition flex items-center font-medium">
+                Trends
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </a>
+            <div
+              class="absolute left-0 mt-2 w-52 bg-richBlack rounded-md shadow-lg py-2 z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Web3</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Metaverse</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Data Science</a>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- Search Bar -->
+        <div class="relative hidden xl:block">
+          <input type="text" placeholder="Search tech topics..."
+            class="bg-yinmnBlue text-platinum placeholder-platinum-300 rounded-full py-2.5 px-5 pl-11 focus:outline-none focus:ring-2 focus:ring-silverLakeBlue w-64 transition duration-200" />
+          <svg class="w-5 h-5 absolute left-3.5 top-2.5 text-platinum-300" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" aria-label="Toggle menu"
+          class="xl:hidden focus:outline-none cursor-pointer text-platinum ml-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-40 hidden xl:hidden"></div>
+
+  <!-- Mobile Menu -->
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+    class="fixed top-0 right-0 h-full w-85 bg-oxfordBlue shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 xl:hidden">
+    <div class="flex justify-end p-6">
+      <button id="mobile-menu-close" aria-label="Close menu" class="focus:outline-none cursor-pointer text-platinum">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="flex flex-col mt-4 space-y-6 px-8 text-lg font-medium">
+      <!-- Mobile Search -->
+      <div class="relative mb-6">
+        <input type="text" placeholder="Search tech topics..."
+          class="bg-yinmnBlue text-platinum placeholder-platinum-300 rounded-full py-3 px-6 pl-12 focus:outline-none focus:ring-2 focus:ring-silverLakeBlue w-full" />
+        <svg class="w-5 h-5 absolute left-4 top-3.5 text-platinum-300" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </div>
+
+      <!-- Static links -->
+      <a href="/" class="text-platinum hover:text-silverLakeBlue transition duration-200 py-2">Home</a>
+
+      <!-- Dropdown Group: Technology -->
+      <div class="relative">
+        <a href="/technology.html">
+          <button
+            class="mobile-dropdown-btn w-full flex justify-between items-center text-silverLakeBlue hover:text-silverLakeBlue transition py-2">
+            Technology
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </a>
+        <div class="mobile-dropdown hidden pl-4 mt-2 space-y-2">
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Internet & Cloud</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Artificial
+            Intelligence</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Cloud Computing</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Gadgets & Devices</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Innovation</a>
+        </div>
+      </div>
+
+      <!-- Dropdown Group: Development -->
+      <div class="relative">
+        <a href="/development">
+          <button
+            class="mobile-dropdown-btn w-full flex justify-between items-center text-platinum hover:text-silverLakeBlue transition py-2">
+            Development
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </a>
+        <div class="mobile-dropdown hidden pl-4 mt-2 space-y-2">
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Programming
+            Concepts</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Web Design</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Software
+            Development</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">DevOps</a>
+        </div>
+      </div>
+
+      <!-- Dropdown Group: Trends -->
+      <div class="relative">
+        <a href="/trends.html">
+          <button
+            class="mobile-dropdown-btn w-full flex justify-between items-center text-platinum hover:text-silverLakeBlue transition py-2">
+            Trends
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </a>
+        <div class="mobile-dropdown hidden pl-4 mt-2 space-y-2">
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Web3</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Metaverse</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Data Science</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <header class="bg-gradient-to-br from-oxfordBlue to-oxfordBlue/90 pt-32 pb-20 md:pb-28">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <!-- Left Column - Text Content -->
+        <div class="lg:w-1/2 space-y-8 text-center lg:text-left">
+          <h1 class=" font-bold leading-tight text-platinum">
+            Complex tech made <span class="text-silverLakeBlue">simple</span>
+          </h1>
+
+          <p class=" text-platinum/90">
+            We break down the most complicated technology concepts into
+            easy-to-understand explanations. Perfect for beginners, students,
+            and anyone curious about how technology works.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start ">
+            <a href="#"
+              class="bg-silverLakeBlue hover:bg-yinmnBlue text-richBlack font-bold py-3 px-8 rounded-lg transition duration-300 text-center shadow-md hover:shadow-lg">
+              Start Learning
+            </a>
+            <a href="#"
+              class="border-2 border-silverLakeBlue text-silverLakeBlue hover:bg-silverLakeBlue hover:text-richBlack font-bold py-3 px-8 rounded-lg transition duration-300 text-center shadow-md hover:shadow-lg">
+              Browse Articles
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column - Image -->
+        <div class="lg:w-1/2 flex justify-center relative">
+          <div class="w-full aspect-[16/9] max-w-2xl">
+            <div class="relative w-full h-full rounded-2xl overflow-hidden shadow-xl">
+              <img src="/uploads/vr-holding.webp" alt="Technology illustration" class="w-full h-full object-cover" />
+              <div class="absolute inset-0"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Copyed from the previous tech-Blog site with improvement-->
+  <!-- Latest Updates Section -->
+  <section class="bg-gradient-to-br from-oxfordBlue to-oxfordBlue/90 py-16">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-[3.5rem] font-bold text-platinum mb-4">Latest Tech Insights</h2>
+        <p class="text-lg text-platinum/80 max-w-3xl mx-auto">
+          Fresh perspectives on today's most important technology developments
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left Column (Featured Content) -->
+        <div class="lg:col-span-2 space-y-8">
+          <!-- Featured Article -->
+          <article class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+            <a href="/blockchain.html" class="block">
+              <div class="relative">
+                <img src="uploads/index-2.avif" alt="Artificial intelligence"
+                  class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-richBlack/80 via-richBlack/30 to-transparent p-8">
+                  <span
+                    class="inline-block bg-silverLakeBlue text-richBlack text-sm font-semibold px-3 py-1 rounded-full mb-3">FEATURED</span>
+                  <h2 class="text-2xl font-bold text-platinum">AI's Role in Global Investments</h2>
+                </div>
+              </div>
+              <div class="p-8">
+                <p class="text-sm text-silverLakeBlue font-semibold uppercase mb-3">Artificial Intelligence</p>
+                <p class="text-oxfordBlue mb-6">
+                  Nvidia's AI chips have been pivotal in driving a massive wave of investment in artificial intelligence
+                  startups, contributing to a $306 billion boom in the sector.
+                </p>
+                <div class="flex items-center justify-between">
+                  <div class="text-sm text-yinmnBlue">
+                    <span>5 min read</span>
+                    <span class="mx-2">•</span>
+                    <span>May 28, 2025</span>
+                  </div>
+                  <a href="#" class="text-silverLakeBlue font-medium hover:underline flex items-center">
+                    Read more
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Secondary Articles Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Article 1 -->
+            <article
+              class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+              <a href="/blockchain.html" class="block">
+                <img src="uploads/quantam-computing.avif" alt="Quantum Computing"
+                  class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-6">
+                  <p class="text-sm text-silverLakeBlue font-semibold uppercase mb-3">Cloud Computing</p>
+                  <h3 class="text-xl font-bold text-richBlack mb-3">Quantum Computing Breakthrough</h3>
+                  <p class="text-oxfordBlue text-sm line-clamp-3 mb-4">
+                    NVIDIA Quantum Cloud gives the entire quantum computing ecosystem access to the world's most
+                    powerful quantum platform.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="text-xs text-yinmnBlue">
+                      <span>4 min read</span>
+                      <span class="mx-2">•</span>
+                      <span>May 25, 2025</span>
+                    </div>
+                    <a href="#" class="text-silverLakeBlue font-medium hover:underline flex items-center text-sm">
+                      Read more
+                      <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Article 2 -->
+            <article
+              class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition duration-300">
+              <a href="/blockchain.html" class="block">
+                <img src="uploads/index-4.avif" alt="Data Science"
+                  class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-6">
+                  <p class="text-sm text-silverLakeBlue font-semibold uppercase mb-3">Data Science</p>
+                  <h3 class="text-xl font-bold text-richBlack mb-3">Interdisciplinary Academic Field</h3>
+                  <p class="text-oxfordBlue text-sm line-clamp-3 mb-4">
+                    Data science integrates domain knowledge from natural sciences with statistical methods to extract
+                    knowledge from data.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="text-xs text-yinmnBlue">
+                      <span>6 min read</span>
+                      <span class="mx-2">•</span>
+                      <span>May 24, 2025</span>
+                    </div>
+                    <a href="#" class="text-silverLakeBlue font-medium hover:underline flex items-center text-sm">
+                      Read more
+                      <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Right Column (Trending/Sidebar) -->
+        <div class="lg:col-span-1">
+          <div class="bg-white rounded-2xl shadow-lg p-6 sticky top-24">
+            <h4 class="text-l font-bold text-richBlack mb-6 pb-4 border-b border-platinum/20">Trending Now</h4>
+
+            <!-- Trending Item 1 -->
+            <article class="mb-6 pb-6 border-b border-platinum/20">
+              <a href="/blockchain.html" class="group">
+                <div class="flex gap-4 items-center"> <!-- Added 'items-center' to vertically center image and text -->
+                  <div class="flex-shrink-0">
+                    <img src="uploads/index-5.avif" alt="Screenless laptop" class="w-16 h-16 rounded-lg object-cover">
+                  </div>
+                  <div class="self-center"> <!-- Optional: helps with alignment if items-center doesn't suffice -->
+                    <span class="text-sm">May 25, 2025</span> <!-- Reduced margin-bottom -->
+                    <h5 class="font-semibold text-richBlack mb-1 group-hover:text-silverLakeBlue transition">
+                      Screenless Laptop
+                    </h5>
+                    <p class="text-sm text-oxfordBlue line-clamp-2 mb-2">
+                      Sightful's Spacetop G1 introduces a new kind of "spatial computing" laptop.
+                    </p>
+                    <div class="flex justify-end">
+                      <span class="text-xs text-silverLakeBlue font-medium flex items-center">
+                        Read more
+                        <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+
+            <!-- Trending Item 2 -->
+            <article class="mb-6 pb-6 border-b border-platinum/20">
+              <a href="/blockchain.html" class="group">
+                <div class="flex gap-4 items-center"> <!-- Added 'items-center' to vertically center image and text -->
+                  <div class="flex-shrink-0">
+                    <img src="uploads/index-6.avif" alt="Screenless laptop" class="w-16 h-16 rounded-lg object-cover">
+                  </div>
+                  <div class="self-center"> <!-- Optional: helps with alignment if items-center doesn't suffice -->
+                    <span class="text-sm">May 25, 2025</span> <!-- Reduced margin-bottom -->
+                    <h5 class="font-semibold text-richBlack mb-1 group-hover:text-silverLakeBlue transition">
+                      Screenless Laptop
+                    </h5>
+                    <p class="text-sm text-oxfordBlue line-clamp-2 mb-2">
+                      Sightful's Spacetop G1 introduces a new kind of "spatial computing" laptop.
+                    </p>
+                    <div class="flex justify-end">
+                      <span class="text-xs text-silverLakeBlue font-medium flex items-center">
+                        Read more
+                        <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Trending Item 3 -->
+            <article class="mb-6 pb-6 border-b border-platinum/20">
+              <a href="/blockchain.html" class="group">
+                <div class="flex gap-4 items-center"> <!-- Added 'items-center' to vertically center image and text -->
+                  <div class="flex-shrink-0">
+                    <img src="uploads/index-2.avif" alt="Screenless laptop" class="w-16 h-16 rounded-lg object-cover">
+                  </div>
+                  <div class="self-center"> <!-- Optional: helps with alignment if items-center doesn't suffice -->
+                    <span class="text-sm">May 25, 2025</span> <!-- Reduced margin-bottom -->
+                    <h5 class="font-semibold text-richBlack mb-1 group-hover:text-silverLakeBlue transition">
+                      Screenless Laptop
+                    </h5>
+                    <p class="text-sm text-oxfordBlue line-clamp-2 mb-2">
+                      Sightful's Spacetop G1 introduces a new kind of "spatial computing" laptop.
+                    </p>
+                    <div class="flex justify-end">
+                      <span class="text-xs text-silverLakeBlue font-medium flex items-center">
+                        Read more
+                        <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Newsletter CTA -->
+            <div class="bg-platinum/10 rounded-lg p-6 border border-platinum/20 bg-platinum/50">
+              <h4 class="font-semibold text-richBlack mb-3">Stay Updated</h4>
+              <p class="text-sm text-oxfordBlue mb-4">Get the latest tech news delivered to your inbox</p>
+              <form class="space-y-3">
+                <input type="email" placeholder="Your email"
+                  class="w-full px-4 py-2 border border-platinum/30 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-silverLakeBlue focus:border-transparent">
+                <button type="submit"
+                  class="w-full bg-silverLakeBlue hover:bg-yinmnBlue text-richBlack font-medium py-2.5 px-4 rounded-lg text-sm transition duration-300 shadow-md hover:shadow-lg">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Articles Section (with white background) -->
+  <section class="container mx-auto px-6 py-8 bg-platinum/50 rounded-lg border border-dashed border-silverLakeBlue/50">
+    <div class="text-center py-8">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-silverLakeBlue" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+      <h3 class="text-lg font-medium text-oxfordBlue mt-4">
+        Advertisement Space
+      </h3>
+      <p class="text-sm text-yinmnBlue mt-2">
+        This space is reserved for future ads that will help support our
+        content
+      </p>
+    </div>
+  </section>
+
+  </section>
+  <!-- Featured Articles Section -->
+  <section class="container mx-auto px-6 py-16" aria-labelledby="featured-articles-heading">
+    <!-- Section Header -->
+    <header class="text-center mb-12 max-w-3xl mx-auto">
+      <h2 id="featured-articles-heading" class="text-3xl md:text-4xl font-bold text-richBlack mb-4">Featured Articles
+      </h2>
+      <p class="text-lg text-oxfordBlue">
+        Our most popular explanations that make complex technology simple to understand.
+      </p>
+    </header>
+
+    <!-- Main Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+      <!-- Large Featured Card (Left) -->
+      <article class="lg:col-span-2">
+        <div
+          class="group relative h-full min-h-[400px] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+          <img src="uploads/index-2.avif" alt="Cloud Computing"
+            class="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition duration-500"
+            loading="lazy" width="800" height="450">
+          <div class="absolute inset-0 bg-gradient-to-t from-richBlack/80 via-richBlack/30 to-transparent"></div>
+          <div class="relative h-full flex flex-col justify-end p-8">
+            <span
+              class="inline-block bg-silverLakeBlue text-richBlack text-sm font-semibold px-3 py-1 rounded-full mb-3 self-start">Cloud
+              Computing</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-platinum mb-2">What Exactly is "The Cloud"?</h2>
+            <p class="text-platinum/90 mb-4">Demystifying cloud technology and how it powers our digital world.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-platinum/80">5 min read</span>
+              <a href="/blockchain.html" class="text-silverLakeBlue font-medium hover:underline flex items-center"
+                aria-label="Read more about What Exactly is The Cloud">
+                Read more
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Right Side Stacked Cards -->
+      <div class="space-y-8">
+        <!-- Card 1 -->
+        <article>
+          <div
+            class="group relative h-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 bg-platinum">
+            <img
+              src="uploads/ai-related-2.jpeg"
+              alt="Artificial Intelligence"
+              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" loading="lazy" width="400"
+              height="225">
+            <div class="p-6 bg-platinum">
+              <span
+                class="inline-block bg-silverLakeBlue text-richBlack text-sm font-semibold px-3 py-1 rounded-full mb-3">AI</span>
+              <h3 class="text-xl font-bold text-richBlack mb-2">AI Explained Without the Hype</h3>
+              <p class="text-oxfordBlue mb-4">Understanding what artificial intelligence really means in practical
+                terms.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-yinmnBlue">7 min read</span>
+                <a href="/blockchain.html" class="text-silverLakeBlue font-medium hover:underline flex items-center"
+                  aria-label="Read more about AI Explained Without the Hype">
+                  Read more
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article>
+          <div
+            class="group relative h-full rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 bg-platinum">
+            <img
+              src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+              alt="Blockchain" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500"
+              loading="lazy" width="400" height="225">
+            <div class="p-6 bg-platinum">
+              <span
+                class="inline-block bg-silverLakeBlue text-richBlack text-sm font-semibold px-3 py-1 rounded-full mb-3">Blockchain</span>
+              <h3 class="text-xl font-bold text-richBlack mb-2">Blockchain Beyond Cryptocurrency</h3>
+              <p class="text-oxfordBlue mb-4">Exploring real-world applications of blockchain technology.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-yinmnBlue">9 min read</span>
+                <a href="/blockchain.html" class="text-silverLakeBlue font-medium hover:underline flex items-center"
+                  aria-label="Read more about Blockchain Beyond Cryptocurrency">
+                  Read more
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Bottom Row - 3 Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <article>
+        <div
+          class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 bg-platinum">
+          <img
+            src="https://images.unsplash.com/photo-1624953587687-daf255b6b80a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+            alt="Web Development" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500"
+            loading="lazy" width="400" height="225">
+          <div class="p-6 bg-platinum">
+            <span
+              class="inline-block bg-silverLakeBlue text-richBlack text-sm font-semibold px-3 py-1 rounded-full mb-3">Web
+              Dev</span>
+            <h3 class="text-xl font-bold text-richBlack mb-2">How Websites Actually Work</h3>
+            <p class="text-oxfordBlue mb-4">The journey from typing a URL to seeing a webpage.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-yinmnBlue">6 min read</span>
+              <a href="/blockchain.html" class="text-silverLakeBlue font-medium hover:underline flex items-center"
+                aria-label="Read more about How Websites Actually Work">
+                Read more
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article>
+        <div
+          class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 bg-platinum">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+            alt="Data Science" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500"
+            loading="lazy" width="400" height="225">
+          <div class="p-6 bg-platinum">
+            <span
+              class="inline-block bg-silverLakeBlue text-richBlack text-sm font-semibold px-3 py-1 rounded-full mb-3">Data
+              Science</span>
+            <h3 class="text-xl font-bold text-richBlack mb-2">Data Science for Beginners</h3>
+            <p class="text-oxfordBlue mb-4">Understanding how data turns into insights and predictions.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-yinmnBlue">8 min read</span>
+              <a href="/blockchain.html" class="text-silverLakeBlue font-medium hover:underline flex items-center"
+                aria-label="Read more about Data Science for Beginners">
+                Read more
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <!-- <article>
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 bg-platinum">
+          <img
+            src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+            alt="Cybersecurity" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500"
+            loading="lazy" width="400" height="225">
+          <div class="p-6 bg-white">
+            <span
+              class="inline-block bg-silverLakeBlue text-richBlack text-sm font-semibold px-3 py-1 rounded-full mb-3">Security</span>
+            <h3 class="text-xl font-bold text-richBlack mb-2">Cybersecurity Basics Everyone Should Know</h3>
+            <p class="text-oxfordBlue mb-4">Simple steps to protect yourself in the digital world.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-yinmnBlue">5 min read</span>
+              <a href="#" class="text-silverLakeBlue font-medium hover:underline flex items-center"
+                aria-label="Read more about Cybersecurity Basics">
+                Read more
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article> -->
+    </div>
+  </section>
+  <section class="container mx-auto px-6 py-8 bg-platinum/50 rounded-lg border border-dashed border-silverLakeBlue/50">
+    <div class="text-center py-8">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-silverLakeBlue" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+      <h3 class="text-lg font-medium text-oxfordBlue mt-4">
+        Advertisement Space
+      </h3>
+      <p class="text-sm text-yinmnBlue mt-2">
+        This space is reserved for future ads that will help support our
+        content
+      </p>
+    </div>
+  </section>
+  <!-- Explore by Categories Section -->
+  <section class="bg-oxfordBlue text-platinum px-6 py-16">
+    <div class="container mx-auto">
+      <!-- Section Header -->
+      <header class="text-center mb-12 max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Explore by Categories</h2>
+        <p class="text-lg text-platinum/80">
+          Find articles organized by technology topics
+        </p>
+      </header>
+
+      <!-- Categories Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Category 1 -->
+        <a href="/blockchain.html"
+          class="group bg-oxfordBlue/70 hover:bg-oxfordBlue/90 border border-silverLakeBlue/20 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:border-silverLakeBlue/40">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-12 h-12 bg-silverLakeBlue/10 group-hover:bg-silverLakeBlue/20 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-silverLakeBlue" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-1">Cloud & Internet</h4>
+            <p class="text-sm text-platinum/60">24 articles</p>
+          </div>
+        </a>
+
+        <!-- Category 2 -->
+        <a href="/blockchain.html"
+          class="group bg-oxfordBlue/70 hover:bg-oxfordBlue/90 border border-silverLakeBlue/20 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:border-silverLakeBlue/40">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-12 h-12 bg-silverLakeBlue/10 group-hover:bg-silverLakeBlue/20 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-silverLakeBlue" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-1">Artificial Intelligence</h4>
+            <p class="text-sm text-platinum/60">18 articles</p>
+          </div>
+        </a>
+
+        <!-- Category 3 -->
+        <a href="/blockchain.html"
+          class="group bg-oxfordBlue/70 hover:bg-oxfordBlue/90 border border-silverLakeBlue/20 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:border-silverLakeBlue/40">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-12 h-12 bg-silverLakeBlue/10 group-hover:bg-silverLakeBlue/20 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-silverLakeBlue" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-1">Blockchain</h4>
+            <p class="text-sm text-platinum/60">15 articles</p>
+          </div>
+        </a>
+
+        <!-- Category 4 -->
+        <a href="/blockchain.html"
+          class="group bg-oxfordBlue/70 hover:bg-oxfordBlue/90 border border-silverLakeBlue/20 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:border-silverLakeBlue/40">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-12 h-12 bg-silverLakeBlue/10 group-hover:bg-silverLakeBlue/20 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-silverLakeBlue" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-1">Web Development</h4>
+            <p class="text-sm text-platinum/60">32 articles</p>
+          </div>
+        </a>
+
+        <!-- Category 5 -->
+        <a href=""
+          class="group bg-oxfordBlue/70 hover:bg-oxfordBlue/90 border border-silverLakeBlue/20 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:border-silverLakeBlue/40">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-12 h-12 bg-silverLakeBlue/10 group-hover:bg-silverLakeBlue/20 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-silverLakeBlue" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-1">Data Science</h4>
+            <p class="text-sm text-platinum/60">21 articles</p>
+          </div>
+        </a>
+
+        <!-- Category 6 -->
+        <a href="#"
+          class="group bg-oxfordBlue/70 hover:bg-oxfordBlue/90 border border-silverLakeBlue/20 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:border-silverLakeBlue/40">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-12 h-12 bg-silverLakeBlue/10 group-hover:bg-silverLakeBlue/20 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-silverLakeBlue" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-1">Cybersecurity</h4>
+            <p class="text-sm text-platinum/60">14 articles</p>
+          </div>
+        </a>
+
+        <!-- Category 7 -->
+        <a href="#"
+          class="group bg-oxfordBlue/70 hover:bg-oxfordBlue/90 border border-silverLakeBlue/20 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:border-silverLakeBlue/40">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-12 h-12 bg-silverLakeBlue/10 group-hover:bg-silverLakeBlue/20 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-silverLakeBlue" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-1">DevOps</h4>
+            <p class="text-sm text-platinum/60">16 articles</p>
+          </div>
+        </a>
+
+        <!-- Category 8 -->
+        <a href="#"
+          class="group bg-oxfordBlue/70 hover:bg-oxfordBlue/90 border border-silverLakeBlue/20 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:border-silverLakeBlue/40">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-12 h-12 bg-silverLakeBlue/10 group-hover:bg-silverLakeBlue/20 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-silverLakeBlue" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-1">Mobile Development</h4>
+            <p class="text-sm text-platinum/60">19 articles</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Ready to Learn Section -->
+  <section class="bg-silverLakeBlue text-richBlack px-6 py-12">
+    <div class="container mx-auto max-w-4xl text-center">
+      <div class="bg-white rounded-xl p-8 md:p-10 shadow-lg">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Learn More?</h2>
+        <p class="text-lg text-oxfordBlue mb-8 max-w-2xl mx-auto">
+          Explore our collection of beginner-friendly tech resources designed specifically for non-tech professionals.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#"
+            class="bg-richBlack hover:bg-richBlack/90 text-white font-medium rounded-lg px-6 py-3 transition-colors duration-300 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            Browse Learning Guides
+          </a>
+
+          <a href="#"
+            class="border-2 border-richBlack text-richBlack hover:bg-richBlack hover:text-white font-medium rounded-lg px-6 py-3 transition-colors duration-300 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+            Get Tech Tips
+          </a>
+        </div>
+
+        <p class="text-sm text-oxfordBlue/80 mt-6">
+          Join our community of curious learners exploring technology.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="bg-richBlack text-platinum px-6 py-12">
+    <div class="container mx-auto">
+      <!-- Newsletter Subscription -->
+      <div class="bg-oxfordBlue/50 rounded-xl p-8 mb-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Stay Updated</h3>
+            <p class="text-platinum/80">Subscribe to our newsletter for the latest tech explanations</p>
+          </div>
+          <div>
+            <form class="flex flex-col sm:flex-row gap-3">
+              <input type="email" placeholder="Your email address"
+                class="flex-grow px-4 py-3 rounded-lg bg-richBlack/50 border border-silverLakeBlue/30 focus:border-silverLakeBlue focus:outline-none text-platinum"
+                required>
+              <button type="submit"
+                class="bg-silverLakeBlue hover:bg-silverLakeBlue/90 text-richBlack font-medium px-6 py-3 rounded-lg transition-colors duration-300 whitespace-nowrap">
+                Subscribe
+              </button>
+            </form>
+            <p class="text-xs text-platinum/60 mt-2">We respect your privacy. Unsubscribe at any time.</p>
+          </div>
+        </div>
+      </div>
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        class="fixed bottom-6 right-6 bg-blue-600 text-white rounded-full p-3 shadow hover:bg-blue-700">
+        ↑
+      </button>
+      <!-- Main Footer Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10">
+        <!-- Brand Info -->
+        <div class="lg:col-span-2">
+          <h3 class="text-2xl font-bold mb-4">Tech Explained Simply</h3>
+          <p class="text-platinum/80 mb-6 max-w-md">
+            Making complex technology accessible to everyone through simple, clear explanations.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" aria-label="Follow us on Twitter"
+              class="text-platinum/80 hover:text-silverLakeBlue transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                </path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Follow us on Facebook"
+              class="text-platinum/80 hover:text-silverLakeBlue transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Follow us on LinkedIn"
+              class="text-platinum/80 hover:text-silverLakeBlue transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 border-b border-silverLakeBlue/30 pb-2">Categories</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Cloud Computing</a>
+            </li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Artificial
+                Intelligence</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Internet Basics</a>
+            </li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Cybersecurity</a></li>
+          </ul>
+        </div>
+
+        <!-- Learning -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 border-b border-silverLakeBlue/30 pb-2">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Learning Guides</a>
+            </li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Tech Tips</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Glossary</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 border-b border-silverLakeBlue/30 pb-2">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">About Us</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Contact</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-silverLakeBlue/20 pt-8 text-center">
+        <p class="text-sm text-platinum/60">
+          © 2025 Tech Explained Simply. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+
+</html>

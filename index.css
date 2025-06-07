@@ -1,0 +1,7 @@
+:root {
+  --rich-black: #0d1b2aff;      /* Darkest shade - Primary (dominant) */
+  --oxford-blue: #1b263bff;     /* Slightly lighter - Secondary */
+  --yinmn-blue: #415a77ff;      /* Mid-tone - Accent/tertiary */
+  --silver-lake-blue: #778da9ff; /* Light shade - Subtle accents */
+  --platinum: #e0e1ddff;        /* Lightest - Background/text contrast */
+}

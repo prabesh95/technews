@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology | Your Publication</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @theme {
+        --color-platinum: #e0e1ddff;
+        --color-silverLakeBlue: #778da9ff;
+        --color-richBlack: #0d1b2aff;
+        --color-oxfordBlue: #1b263bff;
+        --color-yinmnBlue: #415a77ff;
+      }
+h1 {
+  font-size: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+  line-height: 1.25;
+  margin-bottom: 0.9rem;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2.5vw + 0.4rem, 2rem);
+  line-height: 1.35;
+  margin-bottom: 0.7rem;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2vw + 0.3rem, 1.75rem);
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+}
+
+h5 {
+  font-size: clamp(1rem, 1.5vw + 0.2rem, 1.5rem);
+  line-height: 1.45;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: clamp(1rem, 1.2vw + 0.25rem, 1.25rem);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  max-width: 65ch;
+}
+.nav-text{
+  font-size: clamp(1rem, 1.2vw + 0.25rem, 1.25rem);
+  line-height: 1.7;
+  
+  max-width: 65ch;
+}
+      body {
+        
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  /* Or apply to specific elements */
+}
+    </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-platinum text-richBlack">
+  <!-- Navigation -->
+  <nav class="body-text">
+    <div class="bg-oxfordBlue shadow-md fixed left-0 right-0 z-50 flex items-center justify-between h-20">
+      <div class="container mx-auto w-full px-6 flex items-center justify-between h-full">
+        <!-- Logo -->
+        <div class="cursor-pointer">
+          <a href="/">
+            <img src="/uploads/logo.png" alt="logo" class="h-9 md:h-12 w-auto">
+          </a>
+        </div>
+
+        <!-- Horizontal Menu (centered) -->
+        <div class="hidden xl:flex items-center justify-center flex-1 space-x-8 mx-8 nav-text">
+          <a href="/" class="text-platinum hover:text-silverLakeBlue transition duration-200 font-medium ">Home</a>
+
+          <!-- Technology Dropdown -->
+          <div class="relative group">
+            <a href="/technology.html">
+            <button class="text-platinum hover:text-silverLakeBlue transition flex items-center font-medium">
+              
+                Technology
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+             
+              
+            </button>
+             </a>
+            <div
+              class="absolute left-0 mt-2 w-60 bg-richBlack rounded-md shadow-lg py-2 z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Internet & Cloud</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Artificial Intelligence</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Cloud Computing</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Blockchain</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Gadgets & Devices</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Innovation</a>
+            </div>
+          </div>
+
+          <!-- Development Dropdown -->
+          <div class="relative group">
+            <a href="/development.html">
+            <button class="text-platinum hover:text-silverLakeBlue transition flex items-center font-medium">
+              Development
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            </a>
+            <div
+              class="absolute left-0 mt-2 w-56 bg-richBlack rounded-md shadow-lg py-2 z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Programming Concepts</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Web Design</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Software Development</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">DevOps</a>
+            </div>
+          </div>
+
+          <!-- Trends Dropdown -->
+          <div class="relative group">
+            <a href="/trends.html">
+            <button class="text-platinum hover:text-silverLakeBlue transition flex items-center font-medium">
+              Trends
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            </a>
+            <div
+              class="absolute left-0 mt-2 w-52 bg-richBlack rounded-md shadow-lg py-2 z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Web3</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Metaverse</a>
+              <a href="/programming.html" class="block px-4 py-2 text-platinum hover:bg-yinmnBlue">Data Science</a>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- Search Bar -->
+        <div class="relative hidden xl:block">
+          <input type="text" placeholder="Search tech topics..."
+            class="bg-yinmnBlue text-platinum placeholder-platinum-300 rounded-full py-2.5 px-5 pl-11 focus:outline-none focus:ring-2 focus:ring-silverLakeBlue w-64 transition duration-200" />
+          <svg class="w-5 h-5 absolute left-3.5 top-2.5 text-platinum-300" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" aria-label="Toggle menu"
+          class="xl:hidden focus:outline-none cursor-pointer text-platinum ml-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-40 hidden xl:hidden"></div>
+
+  <!-- Mobile Menu -->
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+    class="fixed top-0 right-0 h-full w-85 bg-oxfordBlue shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 xl:hidden">
+    <div class="flex justify-end p-6">
+      <button id="mobile-menu-close" aria-label="Close menu" class="focus:outline-none cursor-pointer text-platinum">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="flex flex-col mt-4 space-y-6 px-8 text-lg font-medium">
+      <!-- Mobile Search -->
+      <div class="relative mb-6">
+        <input type="text" placeholder="Search tech topics..."
+          class="bg-yinmnBlue text-platinum placeholder-platinum-300 rounded-full py-3 px-6 pl-12 focus:outline-none focus:ring-2 focus:ring-silverLakeBlue w-full" />
+        <svg class="w-5 h-5 absolute left-4 top-3.5 text-platinum-300" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </div>
+
+      <!-- Static links -->
+      <a href="/" class="text-platinum hover:text-silverLakeBlue transition duration-200 py-2">Home</a>
+
+      <!-- Dropdown Group: Technology -->
+      <div class="relative">
+        <a href="/technology.html">
+        <button
+          class="mobile-dropdown-btn w-full flex justify-between items-center text-silverLakeBlue hover:text-silverLakeBlue transition py-2">
+          Technology
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        </a>
+        <div class="mobile-dropdown hidden pl-4 mt-2 space-y-2">
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Internet & Cloud</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Artificial Intelligence</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Cloud Computing</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Gadgets & Devices</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Innovation</a>
+        </div>
+      </div>
+
+      <!-- Dropdown Group: Development -->
+      <div class="relative">
+        <a href="/development">
+        <button
+          class="mobile-dropdown-btn w-full flex justify-between items-center text-platinum hover:text-silverLakeBlue transition py-2">
+          Development
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        </a>
+        <div class="mobile-dropdown hidden pl-4 mt-2 space-y-2">
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Programming Concepts</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Web Design</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Software Development</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">DevOps</a>
+        </div>
+      </div>
+
+      <!-- Dropdown Group: Trends -->
+      <div class="relative">
+        <a href="/trends.html">
+        <button
+          class="mobile-dropdown-btn w-full flex justify-between items-center text-platinum hover:text-silverLakeBlue transition py-2">
+          Trends
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        </a>
+        <div class="mobile-dropdown hidden pl-4 mt-2 space-y-2">
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Web3</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Metaverse</a>
+          <a href="/programming.html" class="block text-platinum hover:text-silverLakeBlue py-1">Data Science</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <div class="pt-20"> <!-- Added padding-top to account for fixed nav -->
+    <!-- Breadcrumbs -->
+    <div class="container mx-auto px-4 py-6 text-sm"> <!-- Increased padding -->
+      <div class="flex items-center space-x-2 text-silverLakeBlue">
+        <a href="#" class="hover:underline">Home</a>
+        <span>/</span>
+        <span class="text-richBlack">Trends</span>
+      </div>
+    </div>
+
+    <section id="featured" class="container mx-auto px-6 pb-16">
+      <!-- Removed redundant container and adjusted padding -->
+      <!-- Page Header -->
+      <div class="text-center mb-12 max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-richBlack mb-4">Trends</h2>
+        <p class="text-lg text-oxfordBlue">
+          Exploring the latest innovations, trends, and breakthroughs in the tech world
+        </p>
+      </div>
+
+      <!-- Subcategories -->
+      <section class="mb-12">
+        <h4 class="text-2xl font-bold mb-6">Browse by Subcategory</h4>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <a href="/programming.html"
+            class="bg-oxfordBlue text-platinum p-6 rounded-lg hover:bg-yinmnBlue transition-colors text-center">
+            <i class="fas fa-link text-3xl mb-3"></i>
+            <h5 class="font-semibold">Blockchain</h5>
+          </a>
+          <a href="/programming.html"
+            class="bg-oxfordBlue text-platinum p-6 rounded-lg hover:bg-yinmnBlue transition-colors text-center">
+            <i class="fas fa-code text-3xl mb-3"></i>
+            <h5 class="font-semibold">Programming</h5>
+          </a>
+          <a href="/programming.html"
+            class="bg-oxfordBlue text-platinum p-6 rounded-lg hover:bg-yinmnBlue transition-colors text-center">
+            <i class="fas fa-robot text-3xl mb-3"></i>
+            <h5 class="font-semibold">AI & ML</h5>
+          </a>
+          <a href="/programming.html"
+            class="bg-oxfordBlue text-platinum p-6 rounded-lg hover:bg-yinmnBlue transition-colors text-center">
+            <i class="fas fa-shield-alt text-3xl mb-3"></i>
+            <h5 class="font-semibold">Cybersecurity</h5>
+          </a>
+        </div>
+      </section>
+
+      <!-- Featured Articles -->
+      <section class="mb-12">
+        <div class="flex justify-between items-center mb-6">
+          <h4 class="text-2xl font-bold">Featured Development Articles</h4>
+          <a href="#" class="text-yinmnBlue hover:underline" id="viewAllBtn">View all</a>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Article 1 -->
+          <article
+            class="border border-silverLakeBlue border-opacity-30 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="uploads/blockchain.jpg" alt="Blockchain" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex items-center text-sm text-silverLakeBlue mb-2">
+                <span>Blockchain</span>
+                <span class="mx-2">•</span>
+                <span>9 min read</span>
+              </div>
+              <h5 class="text-xl font-bold mb-2"><a href="/blockchain.html" class="hover:underline">Blockchain Beyond
+                  Cryptocurrency</a></h5>
+              <p class="text-gray-700 mb-4">Exploring real-world applications of blockchain technology that are
+                transforming industries.</p>
+              <div class="flex items-center">
+                <img src="uploads/44.jpg" alt="Author" class="w-8 h-8 rounded-full mr-3">
+                <span class="text-sm">Sarah Chen</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article
+            class="border border-silverLakeBlue border-opacity-30 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="uploads/ai-related-2.jpeg" alt="AI" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex items-center text-sm text-silverLakeBlue mb-2">
+                <span>Artificial Intelligence</span>
+                <span class="mx-2">•</span>
+                <span>7 min read</span>
+              </div>
+              <h5 class="text-xl font-bold mb-2"><a href="/blockchain.html" class="hover:underline">The Ethical Implications of
+                  Generative AI</a></h5>
+              <p class="text-gray-700 mb-4">Examining the moral questions raised by the rapid advancement of AI
+                content creation tools.</p>
+              <div class="flex items-center">
+                <img src="uploads/32.jpg" alt="Author" class="w-8 h-8 rounded-full mr-3">
+                <span class="text-sm">David Park</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article
+            class="border border-silverLakeBlue border-opacity-30 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="uploads/quantam.jpg" alt="Quantum" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <div class="flex items-center text-sm text-silverLakeBlue mb-2">
+                <span>Quantum Computing</span>
+                <span class="mx-2">•</span>
+                <span>11 min read</span>
+              </div>
+              <h5 class="text-xl font-bold mb-2"><a href="/blockchain.html" class="hover:underline">Quantum Computing Breakthroughs in
+                  2023</a></h5>
+              <p class="text-gray-700 mb-4">How recent advancements are bringing us closer to practical quantum
+                applications.</p>
+              <div class="flex items-center">
+                <img src="uploads/44.jpg" alt="Author" class="w-8 h-8 rounded-full mr-3">
+                <span class="text-sm">Maria Gonzalez</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div id="extra-articles" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 hidden">
+          <!-- Extra articles to show when View All is clicked -->
+          <!-- Article 1 -->
+           
+          <article
+            class="border border-silverLakeBlue border-opacity-30 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+            <a href="/blockchain.html">
+            <img src="uploads/blockchain.jpg" alt="Blockchain" class="w-full h-48 object-cover"></a>
+            <div class="p-6">
+              <div class="flex items-center text-sm text-silverLakeBlue mb-2">
+                <span>Blockchain</span>
+                <span class="mx-2">•</span>
+                <span>9 min read</span>
+              </div>
+              <h5 class="text-xl font-bold mb-2"><a href="/programming.html" class="hover:underline">Blockchain Beyond
+                  Cryptocurrency</a></h5>
+              <p class="text-gray-700 mb-4">Exploring real-world applications of blockchain technology that are
+                transforming industries.</p>
+              <div class="flex items-center">
+                <img src="uploads/44.jpg" alt="Author" class="w-8 h-8 rounded-full mr-3">
+                <span class="text-sm">Sarah Chen</span>
+              </div>
+            </div>
+            
+          </article>
+        
+
+          <!-- Article 2 -->
+          <article
+            class="border border-silverLakeBlue border-opacity-30 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+            <a href="/blockchain.html">
+            <img src="uploads/ai-related-2.jpeg" alt="AI" class="w-full h-48 object-cover"></a>
+            <div class="p-6">
+              <div class="flex items-center text-sm text-silverLakeBlue mb-2">
+                <span>Artificial Intelligence</span>
+                <span class="mx-2">•</span>
+                <span>7 min read</span>
+              </div>
+              <h5 class="text-xl font-bold mb-2"><a href="/programming.html" class="hover:underline">The Ethical Implications of
+                  Generative AI</a></h5>
+              <p class="text-gray-700 mb-4">Examining the moral questions raised by the rapid advancement of AI
+                content creation tools.</p>
+              <div class="flex items-center">
+                <img src="uploads/32.jpg" alt="Author" class="w-8 h-8 rounded-full mr-3">
+                <span class="text-sm">David Park</span>
+              </div>
+            </div>
+            
+          </article>
+
+          <!-- Article 3 -->
+          <article
+            class="border border-silverLakeBlue border-opacity-30 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+            <a href="blockchain.html">
+            <img src="uploads/quantam.jpg" alt="Quantum" class="w-full h-48 object-cover"></a>
+            <div class="p-6">
+              <div class="flex items-center text-sm text-silverLakeBlue mb-2">
+                <span>Quantum Computing</span>
+                <span class="mx-2">•</span>
+                <span>11 min read</span>
+              </div>
+              <h5 class="text-xl font-bold mb-2"><a href="/programming.html" class="hover:underline">Quantum Computing Breakthroughs in
+                  2023</a></h5>
+              <p class="text-gray-700 mb-4">How recent advancements are bringing us closer to practical quantum
+                applications.</p>
+              <div class="flex items-center">
+                <img src="uploads/44.jpg" alt="Author" class="w-8 h-8 rounded-full mr-3">
+                <span class="text-sm">Maria Gonzalez</span>
+              </div>
+            </div>
+            
+          </article>
+        </div>
+      </section>
+
+      <!-- Popular Topics -->
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold mb-6">Popular Topics</h3>
+        <div class="flex flex-wrap gap-3">
+          <a href="/programming.html" class="px-4 py-2 bg-silverLakeBlue bg-opacity-20 hover:bg-opacity-30 rounded-full">#Web3</a>
+          <a href="/programming.html" class="px-4 py-2 bg-silverLakeBlue bg-opacity-20 hover:bg-opacity-30 rounded-full">#Metaverse</a>
+          <a href="/programming.html" class="px-4 py-2 bg-silverLakeBlue bg-opacity-20 hover:bg-opacity-30 rounded-full">#5G</a>
+          <a href="/programming.html" class="px-4 py-2 bg-silverLakeBlue bg-opacity-20 hover:bg-opacity-30 rounded-full">#IoT</a>
+          <a href="/programming.html"
+            class="px-4 py-2 bg-silverLakeBlue bg-opacity-20 hover:bg-opacity-30 rounded-full">#EdgeComputing</a>
+          <a href="/programming.html" class="px-4 py-2 bg-silverLakeBlue bg-opacity-20 hover:bg-opacity-30 rounded-full">#ARVR</a>
+          <a href="/programming.html" class="px-4 py-2 bg-silverLakeBlue bg-opacity-20 hover:bg-opacity-30 rounded-full">#DevOps</a>
+          <a href="/programming.html"
+            class="px-4 py-2 bg-silverLakeBlue bg-opacity-20 hover:bg-opacity-30 rounded-full">#CloudNative</a>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="bg-oxfordBlue text-platinum p-8 rounded-lg">
+        <div class="max-w-2xl mx-auto text-center">
+          <h3 class="text-2xl font-bold mb-2">Tech Insights Weekly</h3>
+          <p class="mb-6">Get the latest technology news and analysis delivered to your inbox every Friday.</p>
+          <form class="flex flex-col sm:flex-row gap-3">
+            <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded text-richBlack bg-white">
+            <button type="submit"
+              class="bg-yinmnBlue hover:bg-silverLakeBlue px-6 py-3 rounded font-semibold">Subscribe</button>
+          </form>
+          <p class="text-xs mt-3 text-platinum text-opacity-70">We'll never share your email. Unsubscribe anytime.</p>
+        </div>
+      </section>
+    </section>
+  </div> <!-- End of main content container -->
+
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    class="fixed bottom-6 right-6 bg-blue-600 text-white rounded-full p-3 shadow hover:bg-blue-700">
+    ↑
+  </button>
+  <footer class="bg-richBlack text-platinum px-6 py-12">
+    <div class="container mx-auto">
+      <!-- Newsletter Subscription -->
+
+
+      <!-- Main Footer Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10">
+        <!-- Brand Info -->
+        <div class="lg:col-span-2">
+          <h3 class="text-2xl font-bold mb-4">Tech Explained Simply</h3>
+          <p class="text-platinum/80 mb-6 max-w-md">
+            Making complex technology accessible to everyone through simple, clear explanations.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" aria-label="Follow us on Twitter"
+              class="text-platinum/80 hover:text-silverLakeBlue transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                </path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Follow us on Facebook"
+              class="text-platinum/80 hover:text-silverLakeBlue transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Follow us on LinkedIn"
+              class="text-platinum/80 hover:text-silverLakeBlue transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 border-b border-silverLakeBlue/30 pb-2">Categories</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Cloud Computing</a>
+            </li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Artificial
+                Intelligence</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Internet Basics</a>
+            </li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Cybersecurity</a></li>
+          </ul>
+        </div>
+
+        <!-- Learning -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 border-b border-silverLakeBlue/30 pb-2">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Learning Guides</a>
+            </li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Tech Tips</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Glossary</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4 border-b border-silverLakeBlue/30 pb-2">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">About Us</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Contact</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="text-platinum/80 hover:text-silverLakeBlue transition-colors">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-silverLakeBlue/20 pt-8 text-center">
+        <p class="text-sm text-platinum/60">
+          © 2025 Tech Explained Simply. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="/main.js"></script>
+</body>
+
+</html>
